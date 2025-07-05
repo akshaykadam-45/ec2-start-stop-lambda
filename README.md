@@ -136,5 +136,6 @@ Logs are available under **Monitor > View logs in CloudWatch** for each test run
 
 **Akshay Kadam**  
 🔗 [LinkedIn](https://www.linkedin.com/in/akshaykadam45/)  
-📂 Full working demo on ([https://www.linkedin.com/posts/akshaykadam45_aws-lambda-ec2-activity-7347123417168416769-nix6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtFuL4BRgnOFP1zwZvW0klLGtnUAmiF-_Y])
+📂 [Video Demo](https://www.linkedin.com/posts/akshaykadam45_aws-lambda-ec2-activity-7347123417168416769-nix6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtFuL4BRgnOFP1zwZvW0klLGtnUAmiF-_Y)
+
 
