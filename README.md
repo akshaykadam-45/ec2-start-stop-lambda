@@ -32,17 +32,26 @@ Automate EC2 instance control (start/stop) using AWS Lambda to reduce manual wor
 
 ```json
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "ec2:StartInstances",
-        "ec2:StopInstances"
-      ],
-      "Resource": "*"
-    }
-  ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Start*",
+                "ec2:Stop*"
+            ],
+            "Resource": "*"
+        }
+    ]
 }
 ```
 
@@ -112,38 +121,7 @@ Check the output/logs and confirm your EC2 instance state changes accordingly.
 
 ---
 
-### 5️⃣ (Optional) Use a Custom IAM Policy
-
-Replace full access with more secure permissions:
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "logs:CreateLogGroup",
-                "logs:CreateLogStream",
-                "logs:PutLogEvents"
-            ],
-            "Resource": "arn:aws:logs:*:*:*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:Start*",
-                "ec2:Stop*"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-```
-
----
-
-### 6️⃣ (Optional) Monitor via CloudWatch Logs
+### 5️⃣ (Optional) Monitor via CloudWatch Logs
 
 Logs are available under **Monitor > View logs in CloudWatch** for each test run.
 
