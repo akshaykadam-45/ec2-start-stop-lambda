@@ -121,7 +121,7 @@ Check the output/logs and confirm your EC2 instance state changes accordingly.
 
 ---
 
-### 7️⃣ (Optional) Automate with EventBridge
+(Optional) Automate with EventBridge
 
 You can use **Amazon EventBridge** to trigger this Lambda function automatically at specific times (like a cron job).
 
