@@ -121,6 +121,11 @@ Check the output/logs and confirm your EC2 instance state changes accordingly.
 
 ---
 
+### 7️⃣ (Optional) Automate with EventBridge
+
+You can use **Amazon EventBridge** to trigger this Lambda function automatically at specific times (like a cron job).
+
+---
 ### 5️⃣ (Optional) Monitor via CloudWatch Logs
 
 Logs are available under **Monitor > View logs in CloudWatch** for each test run.
